@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Three.js</title>
+
+  <!-- es.modules.shims poiyfill -->
+  <script async src="https://ga.jspm.io/npm:es-module-shims@1.7.3/dist/es-module-shims.js"></script>
+  <!-- npm install 방식 -->
+  <script type="importmap">
+    {
+      "imports": {
+        "three": "./node_modules/three/build/three.module.js",
+        "three/examples/jsm/": "./node_modules/three/examples/jsm/"
+      }
+    }
+  </script>
+  <!-- cdn 방식 -->
+  <!-- <script type="importmap">
+    {
+      "imports": {
+        "three": "https://unpkg.com/three@0.152.2/build/three.module.js",
+        "three/addons/": "https://unpkg.com/three@0.152.2/examples/jsm/",
+      }
+    }
+  </script> -->
+</head>
+<body>
+  <!-- <canvas id="result" style="width: 100vw; height:100vh;"></canvas> -->
+  <!-- <script type="module" src="./src/js/tangerine.js"></script> -->
+  <!-- <script type="module" src="./src/js/tree.js"></script> -->
+  <script type="module" src="./src/js/index.js"></script>
+</body>
+</html>
